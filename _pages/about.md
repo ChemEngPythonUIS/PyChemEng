@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Sobre PyChem
+title: Sobre PyChemEng
 permalink: /about/
 ---
 <p align="justify">  
