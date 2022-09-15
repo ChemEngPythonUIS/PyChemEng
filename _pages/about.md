@@ -20,9 +20,6 @@ Principales colaboradores:
   <img align="left" width="80" height="80" src="https://ChemEngPythonUIS.github.io/PyChemEng/images/JLNcirc.png" alt="">
 </p>
 <p>
-  <img align="left" width="80" height="80" src="https://ChemEngPythonUIS.github.io/PyChemEng/images/JGH_circ.png" alt="">
-</p>  
-<p>
   <img align="left" width="80" height="80" src="https://ChemEngPythonUIS.github.io/PyChemEng/images/JFRcirc.png" alt="">
 </p>
 <p>
