@@ -173,23 +173,72 @@ window.onload = wrap_img;
 <h1 id="Definición-de-un-sistema-de-ecuaciones-lineales">
 <a class="anchor" href="#Definici%C3%B3n-de-un-sistema-de-ecuaciones-lineales" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Definición de un sistema de ecuaciones lineales</strong><a class="anchor-link" href="#Definici%C3%B3n-de-un-sistema-de-ecuaciones-lineales"> </a>
 </h1>
-<p align="justify">Antes abordar la solución computacional de un sistema de ecuaciones lineales debemos definir estos sistemas en cuestión, así bien, la forma general de un sistema de este tipo es:</p>\begin{equation}
+<p align="justify">Antes abordar la solución computacional de un sistema de ecuaciones lineales debemos definir estos sistemas en cuestión, así bien, la forma general de un sistema de este tipo es:</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+\begin{equation}
 \begin{gathered}
 a_{1,1} x_1+a_{1,2} x_2+\ldots+a_{1, n} x_n=b_1 \\
 a_{2,1} x_1+a_{2,2} x_2+\ldots+a_{2, n} x_n=b_2 \\
 \vdots \\
 a_{n, 1} x_1+a_{n, 2} x_2+\ldots+a_{n, n} x_n=b_n
 \end{gathered}
-\end{equation}<p align="justify">Donde $x_{i}$ representa las variables desconocidas que estamos intentando hallar, $a_{i}$ son los coeficientes que acompañan a dichas variables y $b_{i}$ son los coeficientes a los cuales están igualadas nuestras ecuaciones. También cabe resaltar que para la solución de sistemas hemos de tener el mismo numero de ecuaciones que de variables desconocidas, esto para evitar sobre especificar el sistema. Con base en lo anterior, podemos escribir nuestro sistema de ecuaciones de forma matricial</p>\begin{equation}
+\end{equation}
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p align="justify">Donde $x_{i}$ representa las variables desconocidas que estamos intentando hallar, $a_{i}$ son los coeficientes que acompañan a dichas variables y $b_{i}$ son los coeficientes a los cuales están igualadas nuestras ecuaciones. También cabe resaltar que para la solución de sistemas hemos de tener el mismo numero de ecuaciones que de variables desconocidas, esto para evitar sobre especificar el sistema. Con base en lo anterior, podemos escribir nuestro sistema de ecuaciones de forma matricial</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+\begin{equation}
 \mathbf{Ax = b} \tag{eq.1}
-\end{equation}<p align="justify">Donde $\mathbf{A}$ es la matriz de coeficientes</p>\begin{equation}
+\end{equation}
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p align="justify">Donde $\mathbf{A}$ es la matriz de coeficientes</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+\begin{equation}
 \mathbf{A}=\left[\begin{array}{cccc}
 a_{1,1} &amp; a_{1,2} &amp; \cdots &amp; a_{1, n} \\
 a_{2,1} &amp; a_{2,2} &amp; \cdots &amp; a_{2, n} \\
 \vdots &amp; \vdots &amp; &amp; \vdots \\
 a_{n, 1} &amp; a_{n, 2} &amp; \cdots &amp; a_{n, n}
 \end{array}\right]
-\end{equation}<p>$\mathbf{x}$ es el vector de variables desconocidas</p>
+\end{equation}
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>$\mathbf{x}$ es el vector de variables desconocidas</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 \begin{equation}
 \mathbf{x}=\left[\begin{array}{c}
 x_1 \\
@@ -197,7 +246,21 @@ x_2 \\
 \vdots \\
 x_n
 \end{array}\right]
-\end{equation}<p align="justify">Y $\mathbf{b}$ es el vector de constantes a las cuales están igualadas las ecuaciones</p>\begin{equation}
+\end{equation}
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p align="justify">Y $\mathbf{b}$ es el vector de constantes a las cuales están igualadas las ecuaciones</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+\begin{equation}
 \mathbf{b}=\left[\begin{array}{c}
 b_1 \\
 b_2 \\
@@ -214,9 +277,23 @@ b_n
 <h1 id="Solución-matricial-de-un-sistema">
 <a class="anchor" href="#Soluci%C3%B3n-matricial-de-un-sistema" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Solución matricial de un sistema</strong><a class="anchor-link" href="#Soluci%C3%B3n-matricial-de-un-sistema"> </a>
 </h1>
-<p align="justify">Mediante el tratamiento algebraico de la $(eq.1)$ podemos despejar $\mathbf{x}$ </p>\begin{equation}
+<p align="justify">Mediante el tratamiento algebraico de la $(eq.1)$ podemos despejar $\mathbf{x}$ </p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+\begin{equation}
 \mathbf{x = A^{-1}b} \tag{eq.2}
-\end{equation}<p align="justify">De forma que para hallar nuestro vector de variables desconociadas $\mathbf{x}$, simplemente debemos encontrar la matriz inversa de nuestra matriz $\mathbf{A}$ y multiplicarla por el vector $\mathbf{b}$ </p>
+\end{equation}
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p align="justify">De forma que para hallar nuestro vector de variables desconociadas $\mathbf{x}$, simplemente debemos encontrar la matriz inversa de nuestra matriz $\mathbf{A}$ y multiplicarla por el vector $\mathbf{b}$ </p>
 </div>
 </div>
 </div>
@@ -235,13 +312,27 @@ b_n
 <h3 id="Solución-paso-a-paso">
 <a class="anchor" href="#Soluci%C3%B3n-paso-a-paso" aria-hidden="true"><span class="octicon octicon-link"></span></a>Solución paso a paso<a class="anchor-link" href="#Soluci%C3%B3n-paso-a-paso"> </a>
 </h3>
-<p align="justify">Suponga usted que se desea resolver el siguiente sistema de ecuaciones lineales:</p>\begin{equation}
+<p align="justify">Suponga usted que se desea resolver el siguiente sistema de ecuaciones lineales:</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+\begin{equation}
 \begin{aligned}
 x_1+2 x_2-x_3 &amp;=5 \\
 -x_1+3 x_2+x_3 &amp;=-2 \\
 x_1-x_2+x_3 &amp;=3
 \end{aligned}
-\end{equation}<p>Como primer paso debemos crear nuestra matriz $\mathbf{A}$ y nuestros vector $\mathbf{b}$ en base a los coheficientes de las ecuaciones:</p>
+\end{equation}
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Como primer paso debemos crear nuestra matriz $\mathbf{A}$ y nuestros vector $\mathbf{b}$ en base a los coheficientes de las ecuaciones:</p>
 
 </div>
 </div>
